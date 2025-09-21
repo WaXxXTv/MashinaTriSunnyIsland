@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Mashina Tri - Recherche véhicule</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Script reCAPTCHA -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mashina Tri</h1>
+  </header>
+
+  <main>
+    <h2>🔍 Recherche véhicule - Fourrière</h2>
+    <p>Entrez votre plaque d'immatriculation pour vérifier si votre véhicule est en fourrière :</p>
+
+    <!-- Formulaire centré -->
+    <div class="form-container">
+      <input type="text" id="plaque" placeholder="Ex: ABC123">
+
+      <!-- reCAPTCHA -->
+      <div class="g-recaptcha" data-sitekey="TA_CLE_SITE"></div>
+
+      <button onclick="verifierCaptcha()">Rechercher</button>
+    </div>
+
+    <!-- Résultat affiché ici -->
+    <div id="resultat"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 Mashina Tri | Sunny Island RP</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
