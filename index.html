@@ -1,42 +1,141 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <title>Mashina Tri - Recherche véhicule</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Script reCAPTCHA -->
+  <meta charset="UTF-8" />
+  <title>Mashina Tri - Sunny Island</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
-  <header>
-    <h1>Mashina Tri</h1>
-  </header>
+  <!-- BULLE intérieure -->
+  <div class="site-shell">
 
-  <main>
-    <h2>🔍 Recherche véhicule - Fourrière</h2>
-    <p>Entrez votre plaque d'immatriculation pour vérifier si votre véhicule est en fourrière :</p>
+    <!-- 🔹 Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#rendezvous">Rendez-vous</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#fourriere">Fourrière</a></li>
+        <li><a href="#recrutement">Recrutement</a></li>
+      </ul>
+    </nav>
 
-    <!-- Formulaire centré -->
-    <div class="form-container">
-      <input type="text" id="plaque" placeholder="Ex: ABC123">
+    <!-- 🔹 Accueil -->
+    <section id="accueil" class="section-hero">
+      <div class="hero-content">
+        <img src="https://image.noelshack.com/fichiers/2025/38/7/1758474748-a-minimalist-vector-logo-depicting-the-b-bdtqgjqkrv6y47vgip9ipw-x5vho1pktnqat8r3ce09ua.png" alt="Logo Mashina Tri" class="logo-large">
+        <h1>Bienvenue sur le site de la Mashina Tri</h1>
+        <p>Entreprise de remorquage, fourrière et gardiennage automobile à Sunny Island.</p>
+        <a href="#fourriere" class="btn-primary">🔍 Vérifier mon véhicule</a>
+      </div>
+    </section>
 
-      <!-- reCAPTCHA -->
-      <div class="g-recaptcha" data-sitekey="6LftlNArAAAAAO7Y0-onTHSGaxKAdAypXGwBoWto"></div>
+    <!-- 🔹 À propos (texte gauche / image droite) -->
+    <section id="apropos" class="section-tint tint-1">
+      <div class="container grid">
+        <div class="text-block">
+          <h2><span class="title-pill">À propos</span></h2>
+          <h3>🚨 Mashina Tri</h3>
+          <p><em>Entreprise de remorquage, fourrière & gardiennage – Sunny Island</em></p>
+          <p><strong>Mashina Tri</strong> est spécialisée dans l’assistance automobile, la mise en fourrière et le gardiennage sécurisé.</p>
+          <ul>
+            <li><strong>Remorquage & dépannage</strong> rapide (motos, voitures, utilitaires)</li>
+            <li><strong>Fourrière réglementée</strong> claire et transparente</li>
+            <li><strong>Gardiennage sécurisé</strong> 24/7 avec surveillance</li>
+            <li><strong>Enchères & reventes</strong> de véhicules non réclamés</li>
+          </ul>
+          <p class="slogan">👉 Fiabilité – Transparence – Réactivité</p>
+        </div>
+        <div class="image-block">
+          <img src="https://image.noelshack.com/fichiers/2025/38/7/1758476812-chatgpt-image-21-sept-2025-19-46-42.jpg" alt="Remorquage Mashina Tri">
+        </div>
+      </div>
+    </section>
 
-      <button onclick="verifierCaptcha()">Rechercher</button>
-    </div>
+    <!-- 🔹 Rendez-vous (image gauche / texte droite) -->
+    <section id="rendezvous" class="section-tint tint-2">
+      <div class="container grid reverse">
+        <div class="image-block">
+          <img src="https://image.noelshack.com/fichiers/2025/38/7/1758477054-a-clean-modern-lifestyle-advertisement-s-mql1lwr8ttihg8e5w6-tqq-9awqu7-pqqo3tg2nogyikq.jpeg" alt="Prendre rendez-vous Discord">
+        </div>
+        <div class="text-block">
+          <h2><span class="title-pill">Rendez-vous</span></h2>
+          <p>Pour toute demande (partenariat, récupération de véhicule, entretien), prenez rendez-vous via notre Intranet :</p>
+          <a href="https://discord.com/channels/1418568035010220122/1418568038218862753" target="_blank" class="btn-discord">🎫 Ouvrir un ticket sur Notre Intranet</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Résultat affiché ici -->
-    <div id="resultat"></div>
-  </main>
+    <!-- 🔹 Tarifs (texte gauche / image droite) -->
+    <section id="tarifs" class="section-tint tint-3">
+      <div class="container grid">
+        <div class="text-block">
+          <h2><span class="title-pill">Tarifs</span></h2>
+          <div class="tarif-cards">
+            <div class="card">
+              <h3>📂 Frais de dossier</h3>
+              <p>150 000 $</p>
+            </div>
+            <div class="card">
+              <h3>🚗 Remorquage</h3>
+              <p>5% du prix du véhicule</p>
+            </div>
+            <div class="card">
+              <h3>🅿️ Gardiennage</h3>
+              <p>3% par jour</p>
+            </div>
+          </div>
+          <p class="note">⚠️ Les véhicules spéciaux (limited & Saphir) sont calculés sur une base adaptée de 22 000 000$ & 35 000 000$</p>
+        </div>
+        <div class="image-block">
+          <img src="https://image.noelshack.com/fichiers/2025/38/7/1758477442-chatgpt-image-21-sept-2025-19-57-13.jpg" alt="Tarifs Mashina Tri">
+        </div>
+      </div>
+    </section>
 
-  <footer>
-    <p>© 2025 Mashina Tri | Sunny Island RP</p>
-  </footer>
+    <!-- 🔹 Fourrière (image gauche / texte droite) -->
+    <section id="fourriere" class="section-tint tint-2">
+      <div class="container grid reverse">
+        <div class="image-block">
+          <img src="https://image.noelshack.com/fichiers/2025/38/7/1758477776-maxresdefault.jpg" alt="Parking sécurisé Mashina Tri">
+        </div>
+        <div class="text-block">
+          <h2><span class="title-pill">Fourrière</span></h2>
+          <p>Entrez votre plaque d'immatriculation pour vérifier si votre véhicule est en fourrière :</p>
+          <div class="form-container">
+            <input type="text" id="plaque" placeholder="Ex: ABC123">
+            <div class="g-recaptcha" data-sitekey="6LepiNArAAAAAJzQ8M7ugunbyPh3bIcevZAUFEVn"></div>
+            <button class="btn-primary" onclick="verifierCaptcha()">Rechercher</button>
+          </div>
+          <div id="resultat"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Recrutement (texte gauche / image droite) -->
+    <section id="recrutement" class="section-tint tint-1">
+      <div class="container grid">
+        <div class="text-block">
+          <h2><span class="title-pill">Recrutement</span></h2>
+          <p>Rejoignez une équipe dynamique et investie dans le service de remorquage et de saisie automobile sur Sunny Island.</p>
+          <a href="https://docs.google.com/forms/d/TONFORMULAIRE" target="_blank" class="btn-primary">📋 Postuler</a>
+        </div>
+        <div class="image-block">
+          <img src="https://image.noelshack.com/fichiers/2025/38/7/1758477967-chatgpt-image-21-sept-2025-20-06-00.jpg" alt="Recrutement Mashina Tri">
+        </div>
+      </div>
+    </section>
+
+    <!-- 🔹 Footer -->
+    <footer>
+      <p>© 2025<Auralytix Tout droit réservé </A> - Mashina'Tri Sunny Island</p>
+    </footer>
+
+  </div><!-- /site-shell -->
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
